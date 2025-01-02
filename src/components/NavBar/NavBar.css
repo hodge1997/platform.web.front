@@ -1,0 +1,46 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; /* Example height of the top bar */
+    background-color: #333; /* Dark grey background */
+    color: lightgrey; /* Light grey text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border-bottom: 10px solid #0000ff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+li {
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centers text within the <li> */
+    color: lightgrey; /* Sets text color to light grey */
+}
+
+.navbar .nav-button {
+    background-color: transparent; /* Transparent buttons */
+    border: none;
+    color: lightgrey; /* Light grey text */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-button:hover {
+    color: #cccccc; /* Slight color change on hover */
+}
+
+.itemlists {
+    margin-top: 80px;
+}

@@ -1,0 +1,79 @@
+.back-ground {
+    /* Black text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+/* Style for input boxes */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    /* Make input fill the container */
+    padding: 10px;
+    /* Add padding for better spacing */
+    margin: 8px 0;
+    /* Space between inputs */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+    border: 2px solid #ddd;
+    /* Light gray border for consistency */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Consistent font size */
+    transition: border-color 0.3s ease;
+    /* Smooth border color transition */
+}
+
+/* Style for input boxes on focus */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #0000ff;
+    /* Blue border on focus to match design */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Style for the login button */
+.nav-button {
+    width: 100%;
+    /* Full width button */
+    background-color: #000;
+    /* Blue button color for consistency */
+    color: #fff;
+    /* White text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners for consistency */
+    padding: 10px;
+    /* Padding for button */
+    font-size: 1rem;
+    /* Consistent font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth hover effects */
+}
+
+/* Style for button on hover */
+.nav-button:hover {
+    background-color: #0000ff;
+    /* Slightly darker blue on hover */
+}
+
+/* Style for button on active (click) */
+.nav-button:active {
+    transform: translateY(2px);
+    /* Button press effect */
+    background-color: #0000ff;
+    /* Darker blue on click */
+}

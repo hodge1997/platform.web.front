@@ -1,0 +1,123 @@
+/* FunctionPage.css */
+
+/* Style the overall container */
+.function-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 247, 220);
+  /* Background color for the entire page */
+  color: #ffffff;
+  /* Default text color to white */
+  min-height: 100vh;
+  /* Make sure the container covers the full height of the viewport */
+  margin: 0;
+  /* Remove any default margin */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
+}
+
+/* Container for the two-column layout */
+.function-page-container {
+  display: flex;
+  gap: 20px;
+  /* Space between left and right panels */
+}
+
+/* Left panel (Word Search) takes 1/3 of the width */
+.left-panel {
+  flex: 1;
+  /* Takes up 1 part of the total 3 parts */
+  max-width: 100%;
+  /* Maximum width set to 33.33% */
+}
+
+/* Right panel (other content) takes 2/3 of the width */
+.right-panel {
+  flex: 2;
+  /* Takes up 2 parts of the total 3 parts */
+  max-width: 66.67%;
+  /* Maximum width set to 66.67% */
+}
+
+/* Style each section box */
+.section-box {
+  border: 1px solid #4caf50;
+  /* Green border */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Space inside the box */
+  background-color: #111;
+  /* Slightly lighter black for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Slightly darker shadow */
+  margin-bottom: 20px;
+  /* Space between sections */
+}
+
+/* Style headings inside each section */
+.section-box h2 {
+  margin-top: 0;
+  /* Remove top margin for better spacing */
+  color: #4caf50;
+  /* Green text for section headings */
+}
+
+/* Additional styling for inputs and buttons */
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #4caf50;
+  /* Green border */
+  border-radius: 4px;
+  background-color: white;
+  /* Dark background for input */
+  color: #ffffff;
+  /* White text for input */
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  /* Green background */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+button:hover {
+  background-color: #388e3c;
+  /* Darker green on hover */
+}
+
+/* Style for empty state in the heatmap (optional) */
+.color-empty {
+  fill: #333;
+  /* Dark grey color for empty cells */
+}
+
+/* Customize the calendar heatmap colors */
+.react-calendar-heatmap .color-github-1 {
+  fill: #1b5e20;
+  /* Dark green */
+}
+
+.react-calendar-heatmap .color-github-2 {
+  fill: #388e3c;
+  /* Medium green */
+}
+
+.react-calendar-heatmap .color-github-3 {
+  fill: #4caf50;
+  /* Light green */
+}
+
+.react-calendar-heatmap .color-github-4 {
+  fill: #81c784;
+  /* Very light green */
+}

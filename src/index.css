@@ -1,0 +1,23 @@
+/* General Styles */
+#root {
+  font-family: 'Arial', sans-serif;
+  /* Modern sans-serif font */
+  /* White background */
+  color: #000000
+}
+
+/* Artistic Word Styling */
+.artistic-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.0rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite alternate;
+  background-color: #ffffff;
+  /* Change background color to white */
+  background-repeat: no-repeat;
+  /* Prevents tiling of images */
+}
